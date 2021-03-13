@@ -1,0 +1,30 @@
+{
+  "firstName": "sandeep",
+  "lastName": "...",
+  "email": "sandeep@gmail.com",
+  "password": "1234567890",
+  "address": {
+    "houseNumber": "",
+    "houseName": "",
+    "poi": "",
+    "street": "",
+    "subSubLocality": "",
+    "subLocality": "",
+    "locality": "Lady Irwin College Campus",
+    "village": "",
+    "subDistrict": "Connaught Place",
+    "district": "New Delhi District",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "pincode": "110001",
+    "formattedAddress": "Lady Irwin College Campus, Connaught Place, New Delhi District, New Delhi, Delhi, 110001",
+    "eLoc": "BGKAFR",
+    "latitude": 28.627695,
+    "longitude": 77.235617,
+    "geocodeLevel": "locality",
+    "confidenceScore": 1,
+    "matching": "- - - - - - E - O O E E E",
+    "partialMatch": "- - - - - - - - - - - - -",
+    "eopScore": 75
+  }
+}
