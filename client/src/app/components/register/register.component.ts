@@ -9,6 +9,8 @@ import { MapService } from 'src/app/services/map.service';
 })
 export class RegisterComponent implements OnInit {
   user: User = new User();
+  addresses: any;
+  selectedAddress: any = {};
   constructor(private mapService: MapService) {}
 
   ngOnInit(): void {
@@ -21,7 +23,18 @@ export class RegisterComponent implements OnInit {
     console.log({ user: this.user });
   }
 
-  onAddressType(value) {
-    console.log(value);
+  onAddressType() {
+    const address = this.selectedAddress.formattedAddress;
+    console.log();
+    this.mapService.getAddresses(address).subscribe((addressResponse) => {
+      this.addresses = addressResponse;
+    });
+    // search address from map api
+  }
+
+  onSelectAddress(address) {
+    console.log({ selectedAddress: address });
+    this.selectedAddress = address;
+    this.addresses = [];
   }
 }

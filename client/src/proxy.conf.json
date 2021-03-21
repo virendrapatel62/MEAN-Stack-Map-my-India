@@ -2,5 +2,9 @@
   "/api/security/oauth": {
     "target": "https://outpost.mapmyindia.com",
     "secure": false
+  },
+  "/api/places/geocode": {
+    "target": "https://atlas.mapmyindia.com",
+    "secure": false
   }
 }
