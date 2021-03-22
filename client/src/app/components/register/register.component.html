@@ -21,20 +21,8 @@
             </div>
 
 
-            <!-- Address Input Field -->
-            <div class="form-group mt-3">
-                <label for="">Address</label>
-                <input type="text" class="form-control" (keyup)='onAddressType()' name="address"
-                    [(ngModel)]='selectedAddress.formattedAddress'>
-            </div>
+            <app-address-input (onSelect)='onSelectAddress($event)'></app-address-input>
 
-            <div class="list-group">
-
-                <a *ngFor='let address of addresses' (click)='onSelectAddress(address)'
-                    class="list-group-item list-group-item-action">
-                    {{address.formattedAddress}}</a>
-
-            </div>
 
             <!-- submit button -->
 

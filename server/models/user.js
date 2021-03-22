@@ -39,33 +39,24 @@ const addressSchema = new Schema({
     type: "String",
   },
   pincode: {
-    type: "Date",
+    type: "String",
   },
   formattedAddress: {
-    type: "Date",
+    type: "String",
   },
   eLoc: {
     type: "String",
   },
   latitude: {
-    type: "Number",
+    type: "String",
   },
   longitude: {
-    type: "Number",
+    type: "String",
   },
   geocodeLevel: {
     type: "String",
   },
   confidenceScore: {
-    type: "Number",
-  },
-  matching: {
-    type: "String",
-  },
-  partialMatch: {
-    type: "String",
-  },
-  eopScore: {
     type: "Number",
   },
 });

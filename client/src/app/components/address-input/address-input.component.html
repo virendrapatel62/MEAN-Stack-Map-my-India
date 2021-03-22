@@ -1,0 +1,16 @@
+<!-- Address Input Field -->
+
+<pre class="alert alert-warning">Insert Your Client Id and Secret In Map Service.ts</pre>
+<div class="form-group mt-3">
+    <label for="">Address</label>
+    <input type="text" class="form-control" (keyup)='onAddressType()' name="address"
+        [(ngModel)]='selectedAddress.formattedAddress'>
+</div>
+
+<div class="list-group">
+
+    <a *ngFor='let address of addresses' (click)='_onSelectAddress(address)'
+        class="list-group-item list-group-item-action">
+        {{address.formattedAddress}}</a>
+
+</div>
